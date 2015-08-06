@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0081)http://www.template-preview.com/bootstrap-templates/300111762/template/index.html -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Pizza Chef</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="icon" href="http://www.template-preview.com/bootstrap-templates/300111762/template/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://www.template-preview.com/bootstrap-templates/300111762/template/images/favicon.ico" type="image/x-icon">
+    <link href="~/Scripts/cs/bootstrap(2).css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="~/Scripts/cs/bootstrap-responsive.css" type="text/css" media="screen">
+    <link href="~/Scripts/cs/style.css" rel="stylesheet" media="screen" />
+    <script type="text/javascript" src="~/Scripts/cs/jquery.js"></script>
+    <script type="text/javascript" src="~/Scripts/cs/jquery.easing.1.3(1).js"></script>
+    <script type="text/javascript" src="~/Scripts/cs/superfish(1).js"></script>
+    <script type="text/javascript" src="~/Scripts/cs/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="~/Scripts/cs/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="~/Scripts/cs/jquery.caroufredsel.js"></script>
+    <script type="text/javascript" src="~/Scripts/cs/jquery.touchSwipe.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //
+            /////// cycle
+            $('#cycle')
+            .cycle({
+                fx: 'custom',
+                speed: 0,
+                //prev: '.prev',
+                //next: '.next',
+                speedIn: 1500,
+                speedOut: 500,
+                timeout: 5000,
+                delay: 0,
+                sync: 0,
+                startingSlide: 0,
+                //easing:'easeOutExpo',
+                easeIn: 'easeOutExpo',
+                easeOut: 'easeOutExpo',
+                pager: '#pagination_cycle'
+            });
+
+            //	carouFredSel
+            $('#slider3 .carousel.main ul').carouFredSel({
+                auto: {
+                    timeoutDuration: 8000
+                },
+                responsive: true,
+                prev: '.prev3',
+                next: '.next3',
+                width: '100%',
+                scroll: {
+                    items: 1,
+                    duration: 1000,
+                    easing: "easeOutExpo"
+                },
+                items: {
+                    width: '310',
+                    height: 'variable',	//	optionally resize item-height
+                    visible: {
+                        min: 1,
+                        max: 4
+                    }
+                },
+                mousewheel: false,
+                swipe: {
+                    onMouse: true,
+                    onTouch: true
+                }
+            });
+            $(window).bind("resize", updateSizes_vat).bind("load", updateSizes_vat);
+            function updateSizes_vat() {
+                $('#slider3 .carousel.main ul').trigger("updateSizes");
+            }
+            updateSizes_vat();
+
+
+
+
+        }); //
+        $(window).load(function () {
+            //
+
+        }); //
+    </script>
+    <!--[if lt IE 8]>
+            <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>
+        <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <![endif]-->
+</head>
+<body class="main">
+    <div id="main">
+        <div class="top1">
+            <img src="/image/bg1.jpg" alt="" class="bg1">
+            <img src="/image/hop1.png" alt="" class="hop1">
+            <div class="px1"></div>
+            <div class="top1_inner clearfix">
+
+                <div class="time1_wrapper">
+                    <div class="time1">
+                        <div class="txt1"><a href="index.htm" class="login">Login</a>|<a href="index.htm" class="riger">Risger</a></div>
+                    </div>
+                </div>
+                <header>
+                    <div class="logo_wrapper"><a href="index.htm" class="logo"><img src="/image/logo.png" alt="" width="200" height="200"></a></div>
+                </header>
+                <div class="top2 clearfix">
+                    <div class="slider_cycle">
+                        <div id="pagination_cycle"><li class=""><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index.html#"></a></li><li class=""><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index.html#"></a></li><li class="activeSlide"><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index.html#"></a></li></div>
+                        <ul id="cycle" class="cycle" style="width: 168px; height: 168px;">
+                            <li style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; width: 168px; height: 168px;">
+                                <div class="testimonial1">
+                                    <img src="/image/man1.jpg" alt="" class="img">
+                                    <div class="txt">
+                                        <div class="txt1">
+                                            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                        </div>
+                                        <div class="txt2">
+                                            James 	Logan
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; width: 168px; height: 168px;">
+                                <div class="testimonial1">
+                                    <img src="/image/man2.jpg" alt="" class="img">
+                                    <div class="txt">
+                                        <div class="txt1">
+                                            In sagittis justo urna sem diam at. Pellentesque morbi magna
+                                        </div>
+                                        <div class="txt2">
+                                            Brandon Adamson
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 1; width: 168px; height: 168px;">
+                                <div class="testimonial1">
+                                    <img src="/image/man3.jpg" alt="" class="img">
+                                    <div class="txt">
+                                        <div class="txt1">
+                                            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                        </div>
+                                        <div class="txt2">
+                                            John 	Smith
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social_wrapper">
+                        <ul class="social clearfix">
+                            <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index.html#"><img src="/image/social_ic1.png"></a></li>
+                            <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index.html#"><img src="/image/social_ic2.png"></a></li>
+                            <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index.html#"><img src="/image/social_ic3.png"></a></li>
+                            <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index.html#"><img src="/image/social_ic4.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="menu_wrapper">
+
+            <img src="/image/hop2.png" alt="" class="hop2">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="menu_inner">
+                            <div class="menu_l"></div>
+                            <div class="menu_px">
+                                <div class="navbar navbar_">
+                                    <div class="navbar-inner navbar-inner_">
+                                        <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </a>
+                                        <div class="nav-collapse nav-collapse_ collapse">
+                                            <ul class="nav sf-menu clearfix sf-js-enabled">
+                                                <li class="active"><a href="index.htm"><div class="over_l"></div><div class="over_px"></div><div class="over_r"></div><div class="txt1">Home</div></a></li>
+                                                <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-1.html"><div class="over_l"></div><div class="over_px"></div><div class="over_r"></div><div class="txt1">About Us</div></a></li>
+                                                <li class="sub-menu sub-menu-1">
+                                                    <a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-2.html"><div class="over_l"></div><div class="over_px"></div><div class="over_r"></div><div class="txt1">Our Menu</div></a>
+                                                    <ul style="display: none;">
+                                                        <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-2.html">Food &amp; Snacks</a></li>
+                                                        <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-2_2.html">Beer &amp; Beverage</a></li>
+                                                        <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-2.html">Delivery</a></li>
+                                                        <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-2.html">Catering</a></li>
+                                                        <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/404.html">404 not found</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-3.html"><div class="over_l"></div><div class="over_px"></div><div class="over_r"></div><div class="txt1">Gallary</div></a></li>
+                                                <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-4.html"><div class="over_l"></div><div class="over_px"></div><div class="over_r"></div><div class="txt1">News</div></a></li>
+                                                <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-5.html"><div class="over_l"></div><div class="over_px"></div><div class="over_r"></div><div class="txt1">Contacts</div></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu_r"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    @RenderBody();
+                    <div class="bot2 clearfix">
+                        <div class="menu_bot">
+                            <ul id="menu_bot" class="clearfix">
+                                <li><a href="index.htm">Home</a></li>
+                                <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-1.html">About Us</a></li>
+                                <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-2.html">Our Menu</a></li>
+                                <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-3.html">Gallary</a></li>
+                                <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-4.html">News</a></li>
+                                <li><a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index-5.html">Contacts</a></li>
+                            </ul>
+                        </div>
+
+                        <footer><div class="copyright">Copyright © 2013 Pub Beer</div></footer>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="bootstrap(3).js"></script>
+    <a href="http://www.template-preview.com/bootstrap-templates/300111762/template/index.html#" id="toTop" style="display: none;"><span id="toTopHover"></span></a>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
