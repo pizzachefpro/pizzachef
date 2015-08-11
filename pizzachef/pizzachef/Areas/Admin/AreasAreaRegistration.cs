@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace pizzachef.Areas.Areas
+namespace pizzachef.Areas.Admin
 {
     public class AreasAreaRegistration : AreaRegistration 
     {

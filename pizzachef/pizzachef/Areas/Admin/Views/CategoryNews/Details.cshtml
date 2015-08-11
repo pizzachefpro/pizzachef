@@ -1,0 +1,27 @@
+﻿@model pizzachef.Areas.Admin.Models.CategoryNew
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CategoryNew</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CatNewsName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CatNewsName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CatNewsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
