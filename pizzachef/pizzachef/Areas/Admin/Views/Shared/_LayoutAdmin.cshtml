@@ -6,6 +6,7 @@
     
     pizzachef.Areas.Admin.Controllers.CatProMenu c = new pizzachef.Areas.Admin.Controllers.CatProMenu();
     pizzachef.Areas.Admin.Controllers.CatNewsMenu d = new pizzachef.Areas.Admin.Controllers.CatNewsMenu();
+    pizzachef.Areas.Admin.Controllers.Bien e = new pizzachef.Areas.Admin.Controllers.Bien();
     
 }
 <!DOCTYPE html>
@@ -371,10 +372,16 @@
                     </a>
 
                     <ul class="submenu">
-                        @foreach(var dm in c.getCatProName())
+                        <li>
+                            <a href="/Admin/Products/">
+                                <i class="icon-double-angle-right"></i>
+                                Tất cả sản phẩm
+                            </a>
+                        </li>
+                        @foreach (var dm in c.getCatProName())
                         {
                             <li>
-                                <a href="@dm.ToString()">
+                                <a href="/Admin/Products/">
                                     <i class="icon-double-angle-right"></i>
                                     @dm.ToString()
                                 </a>
@@ -405,6 +412,12 @@
                     </a>
 
                     <ul class="submenu">
+                        <li>
+                            <a href="/Admin/News/">
+                                <i class="icon-double-angle-right"></i>
+                                Tất cả tin tức
+                            </a>
+                        </li>
                         @foreach (var dm in d.getCatNewsName())
                         {
                             <li>

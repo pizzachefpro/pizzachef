@@ -22,11 +22,17 @@ namespace pizzachef.Areas.Admin.Controllers
             return a;
         }
 
-        public IEnumerable<int> getCatProID()
+        public int getCatProID2(string CatProName)
         {
-           
-            IEnumerable<int> query = from d in db.CategoryProducts select d.CatProID;
-            return query;
+            List<int> a = new List<int>();
+            IEnumerable<int> query = from d in db.CategoryProducts where (CatProName == d.CatProName) select d.CatProID;
+            foreach (var kq in query)
+            {
+                a.Add(kq);
+            }
+            int i = a[0];
+            return i;
         }
+
     }
 }

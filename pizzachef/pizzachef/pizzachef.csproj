@@ -161,6 +161,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AreasAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\Bien.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryNewsController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryProductsController.cs" />
     <Compile Include="Areas\Admin\Controllers\CatNewsMenu.cs" />
