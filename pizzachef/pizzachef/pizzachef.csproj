@@ -163,6 +163,8 @@
     <Compile Include="Areas\Admin\AreasAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryNewsController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryProductsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CatNewsMenu.cs" />
+    <Compile Include="Areas\Admin\Controllers\CatProMenu.cs" />
     <Compile Include="Areas\Admin\Controllers\EmployeesController.cs" />
     <Compile Include="Areas\Admin\Controllers\FeedbacksController.cs" />
     <Compile Include="Areas\Admin\Controllers\NewsController.cs" />
